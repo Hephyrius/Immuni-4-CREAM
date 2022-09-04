@@ -16,11 +16,4 @@ contract("Cream Attack POC", async accounts => {
   it('should be able to take all liquidity', async () => {
     await deployedContract.withdrawProfits({from: accounts[0]})
   });
-
-
-  it('should be able to take all liquidity', async () => {
-    await deployedContract.sweepLiquidity({from: accounts[0]})
-  });
-
-
 });
